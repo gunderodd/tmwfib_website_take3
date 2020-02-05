@@ -9,29 +9,33 @@
     </head>
     <body>
 
+        <!-- header illustration, crowd at top of page -->
+        <picture>
+            <img src="media/crowd_faces.webp" id="header_illustration">
+        </picture>
+
         <div class="wrapper">
 
             <!-- this is the central fixed figure of the buffalo character -->
 
-            <div id="fixed-frame">
+            <div 
+            <!-- end of buffalo man frameid="buffalo_frame">
 
-
-
+                <!-- the default image, without hovering -->
                 <picture>
                     <source srcset="media/buffalo_man_1.webp" type="image/webp" class="buffalo_man" id="buffalo_1">
                     <source srcset="media/buffalo_man_1.png" type="image/webp" class="buffalo_man" id="buffalo_1">
                     <img src="media/buffalo_man_1.png" class="buffalo_man" id="buffalo_1">
                 </picture>
 
-
-                
+                <!-- the second buffalo image, when you hover over him -->
                 <picture>
                     <source srcset="media/buffalo_man_2.webp" type="image/webp" class="buffalo_man" id="buffalo_2">
                     <source srcset="media/buffalo_man_2.png" type="image/webp" class="buffalo_man" id="buffalo_2">
                     <img src="media/buffalo_man_2.png" class="buffalo_man" id="buffalo_2">                    
                 </picture>
 
-
+                <!-- the mobile friendly face version in the corner of the screen -->
                 <!-- <div id="fixed-visible">
                     <picture>
                         <source srcset="media/buffalo_man_mobile.webp" type="image/webp">
@@ -41,10 +45,19 @@
     \            </div> -->
 
             </div>
+            <!-- end of buffalo man frame -->
 
         </div>
+        <!-- end of page wrapper, including main content and buffalo man -->
 
-        
+        <!-- footer illustation, crowd at bottom of page -->
+        <picture>
+            <img src="media/crowd_faces_longer.webp" id="bottom_illustration_background">
+        </picture>
+
+        <picture>
+            <img src="media/crowd_faces.webp" id="bottom_illustration_foreground">
+        </picture>
 
     </body>
 </html>
