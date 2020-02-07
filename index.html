@@ -14,12 +14,119 @@
             <img src="media/crowd_faces.webp" id="header_illustration">
         </picture>
 
+        <!-- this is the general wrapper around the grid, the mascot, and all the elements that he falls past -->
         <div class="wrapper">
+
+            <!-- some random content, later will be clouds etc -->
+            <!-- <h1>hi</h1> -->
+            <!-- <h2>hiiiii</h2> -->
+
+            <!-- grid to hold porfolio -->
+            
+            <!-- these are the buttons, off screen, but the labels will be visible and styled -->
+            <input type="radio" id="All" name="categories" value="All" checked>
+            <input type="radio" id="Music" name="categories" value="Music">
+            <input type="radio" id="Art" name="categories" value="Art">
+            <input type="radio" id="Writing" name="categories" value="Writing">
+            <input type="radio" id="Animation" name="categories" value="Animation">
+            <input type="radio" id="Coding" name="categories" value="Coding">
+
+            <!-- here are the visual labels to filter the grid -->
+            <ol class="filters">
+                <li>
+                  <label for="All">All</label>
+                </li>
+                <li>
+                  <label for="Music">Music</label>
+                </li>
+                <li>
+                  <label for="Art">Art</label>
+                </li>
+                <li>
+                  <label for="Writing">Writing</label>
+                </li>
+                <li>
+                  <label for="Animation">Animation</label>
+                </li>
+                <li>
+                  <label for="Coding">Coding</label>
+                </li>
+            </ol>
+
+            <!-- the actual grid with the items that sort by the selected filter -->
+            <ol class="portfolio_grid">
+
+                <li class="grid_item" data-category="Writing" id="item1">
+                    <!-- <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?notebook" alt="notebook">
+                    </div> -->
+                    <div class="grid_video">
+                        <iframe src="https://www.youtube.com/embed/vBA8jAXqwvM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid_text">I'm A WRITING thing</div>
+                </li>
+
+                <li class="grid_item" data-category="Coding Art" id="item2">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?coding" alt="coding">
+                    </div>
+                    <div class="grid_text">I'm a CODING and ART thing</div>
+                </li>
+
+                <li class="grid_item" data-category="Music Art" id="item3">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?painting" alt="painting">
+                    </div>
+                    <div class="grid_text">I'm a MUSIC and ART</div>
+                </li>
+
+                <li class="grid_item" data-category="Animation" id="item4">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?cartoon" alt="cartoon">
+                    </div>
+                    <div class="grid_text">I'm A ANIMATIONthing</div>
+                </li>
+
+                <li class="grid_item" data-category="Animation Writing" id="item5">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?essay" alt="essay">
+                    </div>
+                    <div class="grid_text">I'm A WRITING and ANIMATIONthing thing</div>
+                </li>
+
+                <li class="grid_item" data-category="Music" id="item6">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?music" alt="music">
+                    </div>
+                    <div class="grid_text">I'm A MUSIC thing</div>
+                </li>   
+
+                <li class="grid_item" data-category="Writing" id="item7">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?typewriter" alt="typewriter">
+                    </div>
+                    <div class="grid_text">I'm A WRITING thing</div>
+                </li>
+
+                <li class="grid_item" data-category="Coding" id="item8">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?computer" alt="computer">
+                    </div>
+                    <div class="grid_text">I'm A CODING thing</div>
+                </li>
+                
+                <li class="grid_item" data-category="Art" id="item9">
+                    <div class="grid_image">
+                        <img src="https://source.unsplash.com/1600x900/?artist" alt="artist">
+                    </div>
+                    <div class="grid_text">I'm AN ART thing</div>
+                </li>      
+
+            </ol>
 
             <!-- this is the central fixed figure of the buffalo character -->
 
-            <div 
-            <!-- end of buffalo man frameid="buffalo_frame">
+            <div id="buffalo_frame">
 
                 <!-- the default image, without hovering -->
                 <picture>
@@ -50,14 +157,27 @@
         </div>
         <!-- end of page wrapper, including main content and buffalo man -->
 
-        <!-- footer illustation, crowd at bottom of page -->
-        <picture>
-            <img src="media/crowd_faces_longer.webp" id="bottom_illustration_background">
-        </picture>
 
-        <picture>
-            <img src="media/crowd_faces.webp" id="bottom_illustration_foreground">
-        </picture>
+        <!-- footer illustation, crowd at bottom of page -->    
+        <div id="footer">
+            <picture>
+                <img src="media/crowd_faces.webp" id="bottom_illustration_foreground">
+            </picture>
+        </div>
+
+        <script>
+            const buttons = document.querySelectorAll('input[type="radio"]')
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    if (button.checked) {
+                        console.log(button)
+                    }
+                })
+            })
+        </script>
+
+        <script src="hide.js"></script>
 
     </body>
 </html>
