@@ -17,10 +17,6 @@
         <!-- this is the general wrapper around the grid, the mascot, and all the elements that he falls past -->
         <div class="wrapper">
 
-            <!-- some random content, later will be clouds etc -->
-            <!-- <h1>hi</h1> -->
-            <!-- <h2>hiiiii</h2> -->
-
             <!-- grid to hold porfolio -->
             
             <!-- these are the buttons, off screen, but the labels will be visible and styled -->
@@ -124,6 +120,7 @@
 
             </ol>
 
+
             <!-- this is the central fixed figure of the buffalo character -->
 
             <div id="buffalo_frame">
@@ -157,6 +154,8 @@
         </div>
         <!-- end of page wrapper, including main content and buffalo man -->
 
+        <!-- landscape illustration with well that mascot falls into -->
+        <img src="media/landscape.webp" id="landscape">
 
         <!-- footer illustation, crowd at bottom of page -->    
         <div id="footer">
@@ -165,18 +164,7 @@
             </picture>
         </div>
 
-        <script>
-            const buttons = document.querySelectorAll('input[type="radio"]')
-
-            buttons.forEach((button) => {
-                button.addEventListener('click', () => {
-                    if (button.checked) {
-                        console.log(button)
-                    }
-                })
-            })
-        </script>
-
+        <!-- this is going to change the mascot depending on what is behind him -->
         <script src="hide.js"></script>
 
     </body>

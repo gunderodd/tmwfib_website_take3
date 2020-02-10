@@ -39,6 +39,8 @@ ol {
     min-height: 100vh;
     margin: 0 auto;
 
+    margin-top: 50vh;
+
 }
 
                                             /* ====================
@@ -55,6 +57,7 @@ ol {
     right: 0;
     margin-right: 30%;
     filter: drop-shadow(.5vh .5vw .5vh #151716);
+    transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     /* pointer-events: none; */
 
 }
@@ -75,9 +78,25 @@ ol {
 
     }
 
+        /* less intrusive buffalo while the porfolio is on screen */
+        .hide {
+            width: 42%;
+            height: 65%;
+            bottom: -45%;
+            right: -5%;
+        }
+
+        /* make him appear to fall down the well */
+        .fall {
+            width: 20%;
+            height: 45%;
+            bottom: 0%;
+            right: 10%;
+        }
+
 
                                             /* =============================
-                                             header and footer illustrations
+                                    header and footer and other illustrations from top to bottom
                                              ================================ */
 
 #header_illustration {
@@ -85,6 +104,16 @@ ol {
     height: 100%;
     transform: scaleY(-1) scaleX(-1);
 
+}
+
+#landscape {
+    width: 100%;
+    margin-top: 60vh;
+    margin-bottom: 60vh;
+    padding-bottom: 100vh;
+
+    background: rgb(252,247,232);
+    background: linear-gradient(180deg, rgba(252,247,232,1) 0%, rgba(0,0,0,1) 66%, rgba(0,0,0,1) 78%, rgba(252,247,232,1) 100%);
 }
 
 #footer {
