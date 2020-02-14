@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <title>The Man Who Fell In Buffalo - Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="illustrations.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,10 +15,24 @@
             <img src="media/crowd_faces.webp" id="header_illustration">
         </picture>
 
+        <!-- hyperlink to skip animation fun and get to porfolio -->
+        <a href="#All" id="skip">SKIP</a>
+
+        <!-- clouds, birds, etc, initial descent illustrations -->
+        <div class="cloud_cluster">
+            <div class="slider" id="cloud1"></div>
+            <div class="slider" id="cloud2"></div>
+            <div class="slider" id="cloud3"></div>
+        </div>
+
+        <div class="" id="front-bird"></div>
+
+        <div class="" id="plane"></div>
+
         <!-- this is the general wrapper around the grid, the mascot, and all the elements that he falls past -->
         <div class="wrapper">
 
-            <!-- grid to hold porfolio -->
+            <div class="slider" id="bird1"></div>
             
             <!-- these are the buttons, off screen, but the labels will be visible and styled -->
             <input type="radio" id="All" name="categories" value="All" checked>
@@ -62,11 +77,12 @@
                     <div class="grid_text">I'm A WRITING thing</div>
                 </li>
 
-                <li class="grid_item" data-category="Coding Art" id="item2">
+                <li class="grid_item" data-category="Music" id="item2">
                     <div class="grid_image">
-                        <img src="https://source.unsplash.com/1600x900/?coding" alt="coding">
+                        <!-- <img src="https://source.unsplash.com/1600x900/?coding" alt="coding"> -->
+                        <iframe id="album_stilltalkedabout" src="https://bandcamp.com/EmbeddedPlayer/album=356760476/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="http://themanwhofellinbuffalo.bandcamp.com/album/still-talked-about-the-war">still talked about the war by the man who fell in buffalo</a></iframe>
                     </div>
-                    <div class="grid_text">I'm a CODING and ART thing</div>
+                    <div class="grid_text">I'm a MUSIC thing</div>
                 </li>
 
                 <li class="grid_item" data-category="Music Art" id="item3">

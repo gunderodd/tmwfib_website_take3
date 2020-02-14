@@ -1,0 +1,210 @@
+                                        /* =============================
+                            header and footer and other illustrations from top to bottom
+                                         ================================ */
+
+
+                                         /* top and bottom, header footer */
+
+#header_illustration {
+    width: 100%;
+    height: 100%;
+    transform: scaleY(-1) scaleX(-1);            
+}
+
+#footer {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("media/crowd_faces_longer.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#bottom_illustration_foreground {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: -30vh;
+    z-index: 6;
+
+    filter: drop-shadow(.5vh .5vw .5vh #151716);
+    transform: scaleX(-1);
+
+}
+
+
+/* various clouds and birds etc for initial descent prior to portfolio grid */
+
+.slider {
+
+}
+
+.cloud_cluster {
+    overflow-x: hidden;
+}
+
+#cloud1 {
+    width: 500px;
+    height: 400px;
+    background-image: url("media/clouds_1a.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 7;
+    margin-bottom: 50vh;
+    filter: drop-shadow(0px 4px 5px black);
+
+    animation: slowpatrol 12s ease-in-out infinite, jiggle .4s infinite, cloud1 .3s infinite;
+}
+
+    @keyframes slowpatrol {
+        0% { left: 0vw; }
+        50% { left: 70vw; }
+        100% { left: 0vw; }
+    }
+
+    @keyframes jiggle {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.01); }
+    }
+
+    @keyframes cloud1 {
+        0% { background-image: url("media/clouds_1a.webp"); }
+        100% { background-image: url("media/clouds_1b.webp"); }
+    }
+
+#cloud2 {
+    width: 500px;
+    height: 400px;
+    background-image: url("media/clouds_2a.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 0;
+    top: -60vh;
+
+    animation: slowpatrol 14s ease-in-out infinite, cloud2 .4s infinite;
+}
+
+    @keyframes cloud2 {
+        0% { background-image: url("media/clouds_2a.webp"); }
+        50% { background-image: url("media/clouds_2b.webp"); }
+    }
+
+#cloud3 {
+    width: 300px;
+    height: 200px;
+    background-image: url("media/clouds_3a.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -120vh;
+
+    position: relative;
+    z-index: 7;
+    filter: drop-shadow(0px 4px 5px black);
+
+    animation: slowpatrol 10s ease-in-out infinite, cloud3 .3s infinite;
+}
+
+    @keyframes cloud3 {
+        0% { background-image: url("media/clouds_3a.webp"); }
+        50% { background-image: url("media/clouds_3b.webp"); }
+    }
+
+#bird1 {
+    width: 300px;
+    height: 200px;
+    background-image: url("media/bird_side_1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 7;
+    margin-bottom: 50vh;
+
+    animation: flap .5s ease-in-out infinite;
+}
+
+    @keyframes orbit {
+        0% { margin-left: 0vw; z-index: 0; }
+        50% { margin-left: 70vw; transform: scaleX(-1); z-index: 7; }
+        60% { z-index: 7; }
+        90% { z-index: 7; }
+        100% { margin-left: 0vw; transform: scaleX(1); z-index: 0; }
+    }
+
+    @keyframes flap {
+        0% { background-image: url("media/bird_side_1.webp"); }
+        50% { background-image: url("media/bird_side_3.webp");}
+        75% { background-image: url("media/bird_side_4.webp");}
+        100% { background-image: url("media/bird_side_2.webp"); }
+    }
+
+#front-bird {
+    width: 600px;
+    height: 500px;
+    background-image: url("media/bird_front_1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 7;
+    margin: 20vh;
+
+    animation: front-flap .6s infinite;
+
+}
+
+    @keyframes front-flap {
+        0% { background-image: url("media/bird_front_1.webp"); }
+        25% { background-image: url("media/bird_front_3.webp"); }
+        50% { background-image: url("media/bird_front_2.webp"); }
+        90% { background-image: url("media/bird_front_4.webp"); }
+    }
+
+
+#plane {
+    width: 600px;
+    height: 300px;
+    background-image: url("media/banner_plane_1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 0;
+
+    animation: plane .1s ease-in-out infinite;
+}
+
+    @keyframes plane {
+        0% { background-image: url("media/banner_plane_1.webp"); }
+        50% { background-image: url("media/banner_plane_2.webp"); }
+    }
+
+/* end of initial descent clouds and such */
+
+
+
+
+#landscape {
+    position: relative;
+
+    width: 100%;
+    margin-top: 60vh;
+    margin-bottom: 60vh;
+    padding-bottom: 100vh;
+
+    /* background: rgb(252,247,232);
+    background: linear-gradient(180deg, rgba(252,247,232,1) 0%, rgba(0,0,0,1) 66%, rgba(0,0,0,1) 78%, rgba(252,247,232,1) 100%); */
+
+    animation-name: twitch;
+    animation-iteration-count: infinite;
+    animation-duration: .1s;
+}
+
+    @keyframes twitch {
+        from { width: 100%; }
+        to { width: 99.9%; }
+    }
