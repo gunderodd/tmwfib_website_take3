@@ -24,7 +24,7 @@ html, body {
 
 }
 
-A:visited {
+a:visited {
     text-decoration: none;
     color: black;
 }
@@ -113,7 +113,7 @@ ol {
     top: 20%;
     right: 20%;
 
-    border: 2px solid black;
+    border: 2px solid #252629;
     padding: .5%;
 }
 
@@ -302,9 +302,14 @@ grid item recipe:
 2. name them with unique, descriptive ids
  */
 
-#item1 {
+#tear_your_heart {
     grid-column: span 4;
     grid-row: span 3;
+}
+
+#tear_your_heart:focus {
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 #item2 {

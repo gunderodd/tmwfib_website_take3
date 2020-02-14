@@ -124,15 +124,15 @@
     z-index: 7;
     margin-bottom: 50vh;
 
-    animation: flap .5s ease-in-out infinite;
+    animation: flap .5s ease-in-out infinite, hoverpatrol 10s infinite;
 }
 
-    @keyframes orbit {
-        0% { margin-left: 0vw; z-index: 0; }
-        50% { margin-left: 70vw; transform: scaleX(-1); z-index: 7; }
-        60% { z-index: 7; }
-        90% { z-index: 7; }
-        100% { margin-left: 0vw; transform: scaleX(1); z-index: 0; }
+    @keyframes hoverpatrol {
+        0% { left: 0; transform: scaleX(1); }
+        20% { left: 30%; transform: scaleX(1); }
+        50% { left: 70%; transform: scaleX(-1); }
+        70% { left: 30%; transform: scaleX(-1); }
+        0% { left: 0; transform: scaleX(1); }
     }
 
     @keyframes flap {
@@ -161,26 +161,28 @@
         0% { background-image: url("media/bird_front_1.webp"); }
         25% { background-image: url("media/bird_front_3.webp"); }
         50% { background-image: url("media/bird_front_2.webp"); }
-        90% { background-image: url("media/bird_front_4.webp"); }
+        80% { background-image: url("media/bird_front_4.webp"); }
     }
 
 
 #plane {
-    width: 600px;
-    height: 300px;
-    background-image: url("media/banner_plane_1.webp");
+    width: 300px;
+    height: 100px;
+    background-image: url("media/plane_1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
+    margin-left: -20vw;
     position: relative;
     z-index: 0;
+    transition: transform .2s ease-in-out;
 
-    animation: plane .1s ease-in-out infinite;
+    animation: plane .4s infinite;
 }
 
     @keyframes plane {
-        0% { background-image: url("media/banner_plane_1.webp"); }
-        50% { background-image: url("media/banner_plane_2.webp"); }
+        0% { background-image: url("media/plane_1.webp"); }
+        50% { background-image: url("media/plane_2.webp"); }
     }
 
 /* end of initial descent clouds and such */
@@ -207,4 +209,15 @@
     @keyframes twitch {
         from { width: 100%; }
         to { width: 99.9%; }
+    }
+
+
+
+/* orbit, use for planets or something */
+    @keyframes orbit {
+        0% { margin-left: 0vw; z-index: 0; }
+        50% { margin-left: 70vw; transform: scaleX(-1); z-index: 7; }
+        60% { z-index: 7; }
+        90% { z-index: 7; }
+        100% { margin-left: 0vw; transform: scaleX(1); z-index: 0; }
     }

@@ -27,7 +27,9 @@
 
         <div class="" id="front-bird"></div>
 
-        <div class="" id="plane"></div>
+        <div class="cloud_cluster">
+            <div class="plane" id="plane"></div>
+        </div>
 
         <!-- this is the general wrapper around the grid, the mascot, and all the elements that he falls past -->
         <div class="wrapper">
@@ -67,14 +69,14 @@
             <!-- the actual grid with the items that sort by the selected filter -->
             <ol class="portfolio_grid">
 
-                <li class="grid_item" data-category="Writing" id="item1">
+                <li class="grid_item" data-category="Music Animation" id="tear_your_heart" type="button" onClick="saySomething()">
                     <!-- <div class="grid_image">
                         <img src="https://source.unsplash.com/1600x900/?notebook" alt="notebook">
                     </div> -->
-                    <div class="grid_video">
-                        <iframe src="https://www.youtube.com/embed/vBA8jAXqwvM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="grid_video" type="button" onclick="saySomething()">
+                        <iframe type="button" onclick="saySomething()" src="https://www.youtube.com/embed/vBA8jAXqwvM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="grid_text">I'm A WRITING thing</div>
+                    <div class="grid_text" type="button" onclick="saySomething()">Tear Your Heart Apart (Lyric Video)</div>
                 </li>
 
                 <li class="grid_item" data-category="Music" id="item2">
@@ -182,6 +184,16 @@
 
         <!-- this is going to change the mascot depending on what is behind him -->
         <script src="hide.js"></script>
+        <!-- make the plane fly with scroll -->
+        <script src="plane.js"></script>
+
+        <script>
+
+            function saySomething() {
+                console.log('focussed')
+            }
+
+        </script>
 
     </body>
 </html>
