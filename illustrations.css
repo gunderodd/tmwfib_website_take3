@@ -40,19 +40,24 @@
 }
 
 .cloud_cluster {
-    overflow-x: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+    /* border: 1px solid red; */
 }
 
 #cloud1 {
-    width: 500px;
-    height: 400px;
+    width: 60%;
+    height: 50%;
     background-image: url("media/clouds_1a.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
-    position: relative;
+    position: absolute;
     z-index: 7;
-    margin-bottom: 50vh;
+    bottom: 0;
     filter: drop-shadow(0px 4px 5px black);
 
     animation: slowpatrol 12s ease-in-out infinite, jiggle .4s infinite, cloud1 .3s infinite;
@@ -75,15 +80,15 @@
     }
 
 #cloud2 {
-    width: 500px;
-    height: 400px;
+    width: 50%;
+    height: 50%;
     background-image: url("media/clouds_2a.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
-    position: relative;
+    position: absolute;
     z-index: 0;
-    top: -60vh;
+    top: 30%;
 
     animation: slowpatrol 14s ease-in-out infinite, cloud2 .4s infinite;
 }
@@ -94,12 +99,12 @@
     }
 
 #cloud3 {
-    width: 300px;
-    height: 200px;
+    width: 40%;
+    height: 30%;
     background-image: url("media/clouds_3a.webp");
     background-size: contain;
     background-repeat: no-repeat;
-    top: -120vh;
+    /* top: -120vh; */
 
     position: relative;
     z-index: 7;
@@ -113,16 +118,16 @@
         50% { background-image: url("media/clouds_3b.webp"); }
     }
 
-#bird1 {
-    width: 300px;
-    height: 200px;
+#side-bird {
+    width: 200px;
+    height: 150px;
     background-image: url("media/bird_side_1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
     position: relative;
     z-index: 7;
-    margin-bottom: 50vh;
+    margin-bottom: 100vh;
 
     animation: flap .5s ease-in-out infinite, hoverpatrol 10s infinite;
 }
@@ -139,19 +144,26 @@
         0% { background-image: url("media/bird_side_1.webp"); }
         50% { background-image: url("media/bird_side_3.webp");}
         75% { background-image: url("media/bird_side_4.webp");}
-        100% { background-image: url("media/bird_side_2.webp"); }
+        90% { background-image: url("media/bird_side_2.webp"); }
     }
 
+#front-bird-holder {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    /* border: 1px solid purple; */
+}
+
 #front-bird {
-    width: 600px;
-    height: 500px;
+    width: 30%;
+    height: 100%;
     background-image: url("media/bird_front_1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
     position: relative;
     z-index: 7;
-    margin: 20vh;
 
     animation: front-flap .6s infinite;
 
@@ -164,20 +176,30 @@
         80% { background-image: url("media/bird_front_4.webp"); }
     }
 
+#plane-holder {
+    /* position: relative; */
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    border: 1px solid purple;
+}
 
 #plane {
-    width: 300px;
-    height: 100px;
+    width: 20vw;
+    height: 20vh;
     background-image: url("media/plane_1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
     margin-left: -20vw;
     position: relative;
+    left: 0;
     z-index: 0;
     transition: transform .2s ease-in-out;
 
     animation: plane .4s infinite;
+
+    overflow: hidden;
 }
 
     @keyframes plane {

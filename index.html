@@ -25,16 +25,18 @@
             <div class="slider" id="cloud3"></div>
         </div>
 
-        <div class="" id="front-bird"></div>
+        <div id="front-bird-holder">
+            <div class="" id="front-bird"></div>
+        </div>
 
-        <div class="cloud_cluster">
-            <div class="plane" id="plane"></div>
+        <div id="plane-holder">
+            <div id="plane"></div>
         </div>
 
         <!-- this is the general wrapper around the grid, the mascot, and all the elements that he falls past -->
         <div class="wrapper">
 
-            <div class="slider" id="bird1"></div>
+            <!-- <div class="" id="side-bird"></div> -->
             
             <!-- these are the buttons, off screen, but the labels will be visible and styled -->
             <input type="radio" id="All" name="categories" value="All" checked>
@@ -69,29 +71,29 @@
             <!-- the actual grid with the items that sort by the selected filter -->
             <ol class="portfolio_grid">
 
-                <li class="grid_item" data-category="Music Animation" id="tear_your_heart" type="button" onClick="saySomething()">
+                <li class="grid_item" data-category="Music Animation" id="tear_your_heart">
                     <!-- <div class="grid_image">
                         <img src="https://source.unsplash.com/1600x900/?notebook" alt="notebook">
                     </div> -->
-                    <div class="grid_video" type="button" onclick="saySomething()">
-                        <iframe type="button" onclick="saySomething()" src="https://www.youtube.com/embed/vBA8jAXqwvM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="grid_video">
+                        <iframe src="https://www.youtube.com/embed/vBA8jAXqwvM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="grid_text" type="button" onclick="saySomething()">Tear Your Heart Apart (Lyric Video)</div>
+                    <!-- <div class="grid_text">Tear Your Heart Apart (Lyric Video)</div> -->
                 </li>
 
-                <li class="grid_item" data-category="Music" id="item2">
+                <li class="grid_item" data-category="Music" id="album_stilltalkedabout">
                     <div class="grid_image">
                         <!-- <img src="https://source.unsplash.com/1600x900/?coding" alt="coding"> -->
-                        <iframe id="album_stilltalkedabout" src="https://bandcamp.com/EmbeddedPlayer/album=356760476/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="http://themanwhofellinbuffalo.bandcamp.com/album/still-talked-about-the-war">still talked about the war by the man who fell in buffalo</a></iframe>
+                        <iframe id="still_talked_iframe" src="https://bandcamp.com/EmbeddedPlayer/album=356760476/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="http://themanwhofellinbuffalo.bandcamp.com/album/still-talked-about-the-war">still talked about the war by the man who fell in buffalo</a></iframe>
                     </div>
-                    <div class="grid_text">I'm a MUSIC thing</div>
+                    <!-- <div class="grid_text">I'm a MUSIC thing</div> -->
                 </li>
 
-                <li class="grid_item" data-category="Music Art" id="item3">
+                <li class="grid_item" data-category="Writing Art" id="gods_comic">
                     <div class="grid_image">
-                        <img src="https://source.unsplash.com/1600x900/?painting" alt="painting">
+                        <a href="./gods_web_comic/index.html"><img src="./gods_web_comic/webp_media/godfleeing_colorized1.webp" alt="painting"></a>
                     </div>
-                    <div class="grid_text">I'm a MUSIC and ART</div>
+                    <div class="grid_text">"gods" (2020, webcomic)</div>
                 </li>
 
                 <li class="grid_item" data-category="Animation" id="item4">
@@ -186,14 +188,6 @@
         <script src="hide.js"></script>
         <!-- make the plane fly with scroll -->
         <script src="plane.js"></script>
-
-        <script>
-
-            function saySomething() {
-                console.log('focussed')
-            }
-
-        </script>
 
     </body>
 </html>

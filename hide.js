@@ -7,7 +7,7 @@ const buffalos = document.querySelectorAll('.buffalo_man')
 observer = new IntersectionObserver((entries) => {
 
     // if the grid is visible on the viewport, lower the buffalo man and zoom on his face
-    console.log(entries)
+    // console.log(entries)
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             buffalos.forEach(buffalo => {
@@ -30,7 +30,7 @@ const landscape = document.querySelector('#landscape')
 
 observer = new IntersectionObserver((entries) => {
 
-    console.log(entries)
+    // console.log(entries)
     entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
             buffalos.forEach(buffalo => {

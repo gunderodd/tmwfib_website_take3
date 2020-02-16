@@ -1,10 +1,10 @@
 const plane = document.getElementById("plane")
-    console.log(plane)        
+    // console.log(plane)        
 
   // the options aren't effecting it?
 let options = {
-    threshold: 0.0,
-    rootMargin: "0px 0px 100px 0px"
+    threshold: 1.0,
+    rootMargin: "0px 0px 0px 0px"
 }
 
 observer = new IntersectionObserver((activate, options) => {
@@ -14,20 +14,24 @@ observer = new IntersectionObserver((activate, options) => {
         // if the image enters the viewport, watch the user's scroll...
         window.onscroll = debounce(function() {
                 
-            margin = activated.target.style.marginLeft
+            left = activated.target.style.left
             startAmount = activated.target.offsetTop
-            endAmount = window.pageYOffset + window.innerHeight
+            endAmount = window.pageYOffset + (window.innerHeight * 2)
             finalAmount = endAmount - startAmount
 
-            // move the image by updating the margin by the amount scrolled
-            // if (margin <= "1000px") {
-                activated.target.style.marginLeft = `${finalAmount}px`
+            // move the image by updating the margin by the amount scrolled,
+            // if the amount isn't more than the screen width
+            // if (finalAmount <= window.innerWidth) {
+                // activated.target.display = "block"
+                activated.target.style.left = `${finalAmount}px`
             // } else {
                 // console.log("over the amount")
+                // activated.target.style.display = "none"
             // }
 
             // console.log(finalAmount + " final amount")
-            // console.log(margin + " margin")
+            console.log(left + " left")
+            console.log(window.innerWidth + "window")
         //   console.log(plane)
 
         })
@@ -40,7 +44,7 @@ observer = new IntersectionObserver((activate, options) => {
 
 
 // stop the animation from running too much and wasting bandwidth
-function debounce(func, wait = 10, immediate = true) {
+function debounce(func, wait = 20, immediate = true) {
     var timeout;
     return function() {
     var context = this, args = arguments;

@@ -22,6 +22,13 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat; */
 
+    /* font plan: use a responsive base unit, here, and use rem everywhere else */
+    font-size: 3vw;
+
+}
+
+a {
+    color: black;
 }
 
 a:visited {
@@ -106,7 +113,7 @@ ol {
 
 /* push this button to jump to portfolio */
 #skip {
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: none;
 
     position: absolute;
@@ -135,12 +142,19 @@ input[type="radio"] {
     /* border: 1px solid green; */
     display: flex;
     justify-content: space-evenly;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 5%;
+
+
+}
+
+label {
+    padding: 10%;
+
 }
 
 label:hover {
-    background-color: green;
+    background-color: #252629;
     color: white;
     cursor: pointer;
 }
@@ -156,7 +170,7 @@ https://webdesign.tutsplus.com/tutorials/how-to-build-a-filtering-component-in-p
 [value="Coding"]:checked ~ .filters [for="Coding"],
 [value="Writing"]:checked ~ .filters [for="Writing"],
 [value="Music"]:checked ~ .filters [for="Music"] {
-  background: green;
+  background: #252629;
   color: white;
 }
 
@@ -199,7 +213,6 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
     grid-gap: .2rem;
     grid-auto-flow: dense;
 
-
 }
 
 /* add this to the responsive css sheet later */
@@ -219,7 +232,7 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
 
 
 .grid_item {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: .1rem;
 
     width:100%;
@@ -261,12 +274,6 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
     transition: .5s ease-in-out;
 }
 
-/* .grid_item:hover .grid_video iframe {
-    transform: scale(1.1);
-} */
-
-
-
 .grid_item .grid_text {
     opacity: 0;
     position: absolute;
@@ -307,27 +314,26 @@ grid item recipe:
     grid-row: span 3;
 }
 
-#tear_your_heart:focus {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-#item2 {
+#album_stilltalkedabout {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
-    #album_stilltalkedabout {
+    #still_talked_iframe {
         border: 0;
         width: 100%;
         height: 100%;
         position: absolute;
     }
 
-#item3 {
-    /* height: 40vh; */
-    background-color: lightsteelblue;
+#gods_comic {
+    grid-column: span 2;
+    grid-row: span 2;
 }
+
+    #gods_comic .grid_text {
+        font-size: 3rem;
+    }
 
 #item4 {
     /* height: 50vh; */
