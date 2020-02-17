@@ -24,7 +24,7 @@
         <!-- speech bubble giving option to skip to portfolio -->
         <div id="scroll_bubble">
             <img src="media/bottom_bubble.webp" id="scroll_bubble_image">
-            <div id="scroll_bubble_text">scroll down <span style="font-size: 1.5rem;">or</span> <a href="#All">skip &#8681;</a><br><span style="font-size: 1.2rem">to</span>portfolio</div>
+            <div id="scroll_bubble_text">scroll down <span style="font-size: 1.5rem;">or</span> <a data-scroll href="#All">skip &#8681;</a><br><span style="font-size: 1.2rem">to</span>portfolio</div>
         </div>
 
         <!-- clouds, birds, etc, initial descent illustrations -->
@@ -190,27 +190,27 @@
         <!-- social media links, visually connected to landscape drawing underneath -->
         <div id="links_holder">
             <div id="social_links_frame">
-                <a href="https://www.instagram.com/themanwhofellinbuffalo/"><img class="icon" src="media/icons_insta.webp"></a>
-                <a href="https://www.facebook.com/themanwhofellinbuffalo/"><img class="icon" src="media/icons_facebook.webp"></a>
-                <a href="https://twitter.com/ethan_bundy"><img class="icon" src="media/icons_twitter.webp"></a>
-                <a href=""><img class="icon" src="media/icons_email.webp"></a>
-                <a href="https://themanwhofellinbuffalo.bandcamp.com/"><img class="icon" src="media/icons_bandcamp.webp"></a>
-                <a href="https://soundcloud.com/themanwhofellinbuffalo"><img class="icon" src="media/icons_soundcloud.webp"></a>
-                <a href="https://artists.spotify.com/c/artist/0Cw3nYYZgDGw7DPNlFHIDM/music/songs"><img class="icon" src="media/icons_spotify.webp"></a>
-                <a href="https://www.youtube.com/channel/UCT5yawCrPztfK3u6xvS5-Pw?view_as=subscriber"><img class="icon" src="media/icons_youtube.webp"></a>
+                <a href="https://www.instagram.com/themanwhofellinbuffalo/" target="_blank"><img class="icon" src="media/icons_insta.webp"></a>
+                <a href="https://www.facebook.com/themanwhofellinbuffalo/" target="_blank"><img class="icon" src="media/icons_facebook.webp"></a>
+                <a href="https://twitter.com/ethan_bundy" target="_blank"><img class="icon" src="media/icons_twitter.webp"></a>
+                <a href="" target="_blank"><img class="icon" src="media/icons_email.webp"></a>
+                <a href="https://themanwhofellinbuffalo.bandcamp.com/" target="_blank"><img class="icon" src="media/icons_bandcamp.webp"></a>
+                <a href="https://soundcloud.com/themanwhofellinbuffalo" target="_blank"><img class="icon" src="media/icons_soundcloud.webp"></a>
+                <a href="https://artists.spotify.com/c/artist/0Cw3nYYZgDGw7DPNlFHIDM/music/songs" target="_blank"><img class="icon" src="media/icons_spotify.webp"></a>
+                <a href="https://www.youtube.com/channel/UCT5yawCrPztfK3u6xvS5-Pw?view_as=subscriber" target="_blank"><img class="icon" src="media/icons_youtube.webp"></a>
             </div>
-            <img src="media/side_bubble.webp" id="links_image">
+            <img src="media/side_bubble.webp" id="links_bubble">
         </div>
 
         <!-- landscape illustration with well that mascot falls into, more links -->
         <div id="landscape_menu">
             <img src="media/landscape.webp" id="landscape">
             <div id="about_holder">
-                <a href="other_pages/about.html" id="about_text">about</a>
+                <a href="other_pages/about.html" target="_blank" id="about_text">about</a>
                 <img src="media/side_bubble.webp" id="about_image">
             </div>
             <div id="resume_holder">
-                <a href="other_pages/resume.html" id="resume_text">resume</a>
+                <a href="other_pages/resume.html" target="_blank" id="resume_text">resume</a>
                 <img src="media/bottom_bubble.webp" id="resume_image">
             </div>
         </div>
@@ -231,6 +231,10 @@
         <script src="js/big_plane.js"></script>
         <!--  -->
         <script src="js/speech_bubbles.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+            let scroll = new SmoothScroll('a[href*="#"]')
+        </script>
 
     </body>
 </html>

@@ -20,7 +20,7 @@ observer2 = new IntersectionObserver((activate) => {
                 finalAmount = endAmount - startAmount
 
                 // move the image by updating the margin by the amount scrolled
-                activated.target.style.right = `${finalAmount - 400}px`
+                activated.target.style.right = `${finalAmount - 600}px`
 
             })
         }
