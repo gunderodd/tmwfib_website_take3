@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <title>The Man Who Fell In Buffalo - Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="stylesheet" type="text/css" href="illustrations.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/illustrations.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +15,17 @@
             <img src="media/crowd_faces.webp" id="header_illustration">
         </picture>
 
-        <!-- hyperlink to skip animation fun and get to porfolio -->
-        <a href="#All" id="skip">SKIP</a>
+        <!-- bubble showing site title, disappears when user scrolls away from top of page -->
+        <div id="title_bubble">
+            <img src="media/side_bubble.webp" id="title_bubble_image">
+            <div id="title_bubble_text"><span style="font-size: 1.5rem;">the</span> man who fell <span style="font-size: 1.5rem;">in</span> buffalo</div>
+        </div>
+
+        <!-- speech bubble giving option to skip to portfolio -->
+        <div id="scroll_bubble">
+            <img src="media/bottom_bubble.webp" id="scroll_bubble_image">
+            <div id="scroll_bubble_text">scroll down <span style="font-size: 1.5rem;">or</span> <a href="#All">skip &#8681;</a><br><span style="font-size: 1.2rem">to</span>portfolio</div>
+        </div>
 
         <!-- clouds, birds, etc, initial descent illustrations -->
         <div class="cloud_cluster">
@@ -29,8 +38,12 @@
             <div class="" id="front-bird"></div>
         </div>
 
-        <div id="plane-holder">
-            <div id="plane"></div>
+        <div id="plane-holder-lil">
+            <div id="lil_plane"></div>
+        </div>
+
+        <div id="plane-holder-big">
+            <div id="big_plane"></div>
         </div>
 
         <!-- this is the general wrapper around the grid, the mascot, and all the elements that he falls past -->
@@ -174,8 +187,35 @@
         </div>
         <!-- end of page wrapper, including main content and buffalo man -->
 
-        <!-- landscape illustration with well that mascot falls into -->
-        <img src="media/landscape.webp" id="landscape">
+        <!-- social media links, visually connected to landscape drawing underneath -->
+        <div id="links_holder">
+            <div id="social_links_frame">
+                <a href="https://www.instagram.com/themanwhofellinbuffalo/"><img class="icon" src="media/icons_insta.webp"></a>
+                <a href="https://www.facebook.com/themanwhofellinbuffalo/"><img class="icon" src="media/icons_facebook.webp"></a>
+                <a href="https://twitter.com/ethan_bundy"><img class="icon" src="media/icons_twitter.webp"></a>
+                <a href=""><img class="icon" src="media/icons_email.webp"></a>
+                <a href="https://themanwhofellinbuffalo.bandcamp.com/"><img class="icon" src="media/icons_bandcamp.webp"></a>
+                <a href="https://soundcloud.com/themanwhofellinbuffalo"><img class="icon" src="media/icons_soundcloud.webp"></a>
+                <a href="https://artists.spotify.com/c/artist/0Cw3nYYZgDGw7DPNlFHIDM/music/songs"><img class="icon" src="media/icons_spotify.webp"></a>
+                <a href="https://www.youtube.com/channel/UCT5yawCrPztfK3u6xvS5-Pw?view_as=subscriber"><img class="icon" src="media/icons_youtube.webp"></a>
+            </div>
+            <img src="media/side_bubble.webp" id="links_image">
+        </div>
+
+        <!-- landscape illustration with well that mascot falls into, more links -->
+        <div id="landscape_menu">
+            <img src="media/landscape.webp" id="landscape">
+            <div id="about_holder">
+                <a href="other_pages/about.html" id="about_text">about</a>
+                <img src="media/side_bubble.webp" id="about_image">
+            </div>
+            <div id="resume_holder">
+                <a href="other_pages/resume.html" id="resume_text">resume</a>
+                <img src="media/bottom_bubble.webp" id="resume_image">
+            </div>
+        </div>
+
+
 
         <!-- footer illustation, crowd at bottom of page -->    
         <div id="footer">
@@ -185,9 +225,12 @@
         </div>
 
         <!-- this is going to change the mascot depending on what is behind him -->
-        <script src="hide.js"></script>
+        <script src="js/hide.js"></script>
         <!-- make the plane fly with scroll -->
-        <script src="plane.js"></script>
+        <script src="js/lil_plane.js"></script>
+        <script src="js/big_plane.js"></script>
+        <!--  -->
+        <script src="js/speech_bubbles.js"></script>
 
     </body>
 </html>
