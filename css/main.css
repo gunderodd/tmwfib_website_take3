@@ -48,7 +48,7 @@ ol {
 
     width: 96%;
     /* height: 100%; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0 auto;
 
     margin-top: 50vh;
@@ -416,6 +416,10 @@ input[type="radio"] {
     left: -9999px;
     }
 
+#stop {
+    /* margin-top: 100vh; */
+}
+
 /* the visible, clickable labels for each category of project (art, music, writing...) */
 .filters {
     /* border: 1px solid green; */
@@ -423,7 +427,6 @@ input[type="radio"] {
     justify-content: space-evenly;
     font-size: 2rem;
     margin-bottom: 5%;
-
 
 }
 
@@ -488,7 +491,7 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
     
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: 100px 300px;
+    grid-auto-rows: 15vh 40vh;
     grid-gap: .2rem;
     grid-auto-flow: dense;
 
@@ -517,6 +520,7 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
     width:100%;
     height:100%;
     position:relative;
+
 }
 
 .grid_item .grid_image {
@@ -602,16 +606,25 @@ grid item recipe:
         border: 0;
         width: 100%;
         height: 100%;
-        position: absolute;
+        /* position: absolute; */
     }
 
 #gods_comic {
     grid-column: span 2;
     grid-row: span 2;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
     #gods_comic .grid_text {
         font-size: 3rem;
+
     }
 
 #item4 {

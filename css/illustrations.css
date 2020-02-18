@@ -216,6 +216,8 @@
     overflow: hidden;
     /* border: 1px solid purple; */
     margin-top: 100vh;
+    /* this is so the scroll doesn't go too far */
+    margin-bottom: 70vh;
 
 }
 
@@ -234,6 +236,8 @@
     animation: plane .4s infinite;
 
     overflow: hidden;
+
+
 }
 
 /* end of initial descent clouds and such */
