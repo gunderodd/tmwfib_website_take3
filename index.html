@@ -12,7 +12,9 @@
 
         <!-- header illustration, crowd at top of page -->
         <picture>
-            <img src="media/crowd_faces.webp" id="header_illustration">
+            <source srcset="media/crowd_faces.webp">
+            <source srcset="media/fallback_media/crowd_faces.png">
+            <img src="media/fallback_media/crowd_faces.png" id="header_illustration">
         </picture>
 
         <!-- bubble showing site title, disappears when user scrolls away from top of page -->
