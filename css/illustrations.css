@@ -53,7 +53,7 @@
 #cloud1 {
     width: 60%;
     height: 50%;
-    background-image: url("../media/clouds_1a.webp");
+
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -61,9 +61,21 @@
     z-index: 7;
     bottom: 0;
     filter: drop-shadow(0px 4px 5px black);
-
     animation: slowpatrol 12s ease-in-out infinite, jiggle .4s infinite, cloud1 .3s infinite;
+
+    
 }
+
+    .no-webp #cloud1 {
+        background-image: url("../media/fallback_media/clouds_1a.png");
+        /* animation: slowpatrol 12s ease-in-out infinite, jiggle .4s infinite, cloud1_fallback .3s infinite; */
+        /* -webkit-animation: slowpatrol 12s ease-in-out infinite, jiggle .4s infinite, cloud1_fallback .3s infinite; */
+    }
+
+    .webp #cloud1 {
+        background-image: url("../media/clouds_1a.webp");
+        /* animation: slowpatrol 12s ease-in-out infinite, jiggle .4s infinite, cloud1 .3s infinite; */
+    }
 
     @keyframes slowpatrol {
         0% { left: 0vw; }
@@ -80,30 +92,51 @@
         0% { background-image: url("../media/clouds_1a.webp"); }
         100% { background-image: url("../media/clouds_1b.webp"); }
     }
+/* 
+    @-webkit-keyframes cloud1_fallback {
+        0% { background-image: url("../media/fallback_media/clouds_1a.png"); }
+        100% { background-image: url("../media/fallback_media/clouds_1b.png"); }
+    }
+
+    @keyframes cloud1_fallback {
+        0% { background-image: url("../media/fallback_media/clouds_1a.png"); }
+        100% { background-image: url("../media/fallback_media/clouds_1b.png"); }
+    } */
 
 #cloud2 {
     width: 50%;
     height: 50%;
-    background-image: url("../media/clouds_2a.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
     position: absolute;
     z-index: 0;
     top: 30%;
+    animation: slowpatrol 14s ease-in-out infinite, jiggle 1s infinite, cloud2 .4s infinite;
 
-    animation: slowpatrol 14s ease-in-out infinite, cloud2 .4s infinite;
 }
+
+    .no-webp #cloud2 {
+        background-image: url("../media/fallback_media/clouds_2a.png");
+        /* animation: slowpatrol 14s ease-in-out infinite, cloud2 .4s infinite; */
+
+    }
+
+    .webp #cloud2 {
+        background-image: url("../media/clouds_2a.webp");
+        /* animation: slowpatrol 14s ease-in-out infinite, cloud2 .4s infinite; */
+    }
 
     @keyframes cloud2 {
         0% { background-image: url("../media/clouds_2a.webp"); }
         50% { background-image: url("../media/clouds_2b.webp"); }
     }
 
+
+
 #cloud3 {
     width: 40%;
     height: 30%;
-    background-image: url("../media/clouds_3a.webp");
     background-size: contain;
     background-repeat: no-repeat;
     /* top: -120vh; */
@@ -115,6 +148,14 @@
     animation: slowpatrol 10s ease-in-out infinite, cloud3 .3s infinite;
 }
 
+    .no-webp #cloud3 {
+        background-image: url("../media/fallback_media/clouds_3a.png");
+    }
+
+    .webp #cloud3 {
+        background-image: url("../media/clouds_3a.webp");
+    }
+
     @keyframes cloud3 {
         0% { background-image: url("../media/clouds_3a.webp"); }
         50% { background-image: url("../media/clouds_3b.webp"); }
@@ -123,7 +164,6 @@
 #side-bird {
     width: 200px;
     height: 150px;
-    background-image: url("../media/bird_side_1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -133,6 +173,14 @@
 
     animation: flap .5s ease-in-out infinite, hoverpatrol 10s infinite;
 }
+
+    .no-webp #side-bird {
+        background-image: url("../media/fallback_media/bird_side_1.png");
+    }
+
+    .webp #side-bird {
+        background-image: url("../media/bird_side_1.webp");
+    }
 
     @keyframes hoverpatrol {
         0% { left: 0; transform: scaleX(1); }
@@ -160,7 +208,6 @@
 #front-bird {
     width: 30%;
     height: 100%;
-    background-image: url("../media/bird_front_1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -170,6 +217,14 @@
     animation: front-flap .6s infinite;
 
 }
+
+    .no-webp #front-bird {
+        background-image: url("../media/fallback_media/bird_front_1.png");
+    }
+
+    .webp #front-bird {
+        background-image: url("../media/bird_front_1.webp");
+    }
 
     @keyframes front-flap {
         0% { background-image: url("../media/bird_front_1.webp"); }

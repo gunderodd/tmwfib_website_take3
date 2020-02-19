@@ -19,13 +19,21 @@
 
         <!-- bubble showing site title, disappears when user scrolls away from top of page -->
         <div id="title_bubble">
-            <img src="media/side_bubble.webp" id="title_bubble_image">
+            <picture>
+                <source srcset="media/side_bubble.webp">
+                <source srcset="media/fallback_media/side_bubble.png">
+                <img src="media/fallback_media/side_bubble.png" id="title_bubble_image" alt="a speech bubble">
+            </picture>
             <div id="title_bubble_text"><span style="font-size: 1.5rem;">the</span> man who fell <span style="font-size: 1.5rem;">in</span> buffalo</div>
         </div>
 
         <!-- speech bubble giving option to skip to portfolio -->
         <div id="scroll_bubble">
-            <img src="media/bottom_bubble.webp" id="scroll_bubble_image">
+            <picture>
+                <source srcset="media/bottom_bubble.webp">
+                <source srcset="media/fallback_media/bottom_bubble.png">
+                <img src="media/fallback_media/bottom_bubble.png" id="scroll_bubble_image" alt="another speech bubble">
+            </picture>
             <div id="scroll_bubble_text">scroll down <span style="font-size: 1.5rem;">or </span><a data-scroll href="#big_plane">skip &#8681;</a><br><span style="font-size: 1.2rem">to</span>portfolio</div>
         </div>
 
@@ -169,16 +177,16 @@
 
                 <!-- the default image, without hovering -->
                 <picture>
-                    <source srcset="media/buffalo_man_1.webp" type="image/webp" class="buffalo_man" id="buffalo_1">
-                    <source srcset="media/buffalo_man_1.png" type="image/webp" class="buffalo_man" id="buffalo_1">
-                    <img src="media/buffalo_man_1.png" class="buffalo_man" id="buffalo_1">
+                    <source srcset="media/buffalo_man_1.webp" type="image/webp">
+                    <source srcset="media/fallback_media/buffalo_man_1.png" type="image/webp">
+                    <img src="media/fallback_media/buffalo_man_1.png" class="buffalo_man" id="buffalo_1">
                 </picture>
 
                 <!-- the second buffalo image, when you hover over him -->
                 <picture>
-                    <source srcset="media/buffalo_man_2.webp" type="image/webp" class="buffalo_man" id="buffalo_2">
-                    <source srcset="media/buffalo_man_2.png" type="image/webp" class="buffalo_man" id="buffalo_2">
-                    <img src="media/buffalo_man_2.png" class="buffalo_man" id="buffalo_2">                    
+                    <source srcset="media/buffalo_man_2.webp" type="image/webp">
+                    <source srcset="media/fallback_media/buffalo_man_2.png" type="image/webp">
+                    <img src="media/fallback_media/buffalo_man_2.png" class="buffalo_man" id="buffalo_2">                    
                 </picture>
 
                 <!-- the mobile friendly face version in the corner of the screen -->
@@ -244,6 +252,8 @@
         <script>
             let scroll = new SmoothScroll('a[href*="#"]')
         </script>
+        <!-- use best image type for css background images -->
+        <script src="js/modernizr-custom.js"></script>
 
     </body>
 </html>
