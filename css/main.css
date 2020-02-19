@@ -627,10 +627,15 @@ grid item recipe:
 
     }
 
-#item4 {
-    /* height: 50vh; */
-    background-color: pink;
+#collab_post {
+    font-size: 1.2rem;
+    grid-column: span ;
+    grid-row: span 2;
 }
+
+    #collab_post:hover .grid_text {
+        background: rgba(0, 0,0,.9);
+    }
 
 #item5 {
     /* height: 40vh; */
@@ -656,3 +661,17 @@ grid item recipe:
     grid-column: span 5;
     grid-row: span 3;
 }
+
+#comic_post {
+    font-size: 1.2rem;
+    grid-column: span ;
+    grid-row: span 2;
+}
+
+    #comic_post .grid_image img {
+        object-position: left;
+    }
+
+    #comic_post:hover .grid_text {
+        background: rgba(0, 0,0,.9);
+    }
