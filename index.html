@@ -4,7 +4,7 @@
         <title>The Man Who Fell In Buffalo - Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/illustrations.css">
-        <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
@@ -108,25 +108,44 @@
                     <div class="grid_image">
                         <!-- <img src="https://source.unsplash.com/1600x900/?coding" alt="coding"> -->
                         <iframe id="still_talked_iframe" src="https://bandcamp.com/EmbeddedPlayer/album=356760476/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="http://themanwhofellinbuffalo.bandcamp.com/album/still-talked-about-the-war">still talked about the war by the man who fell in buffalo</a></iframe>
+                        <!-- <h1>hello there</h1> -->
                     </div>
                     <!-- <div class="grid_text">I'm a MUSIC thing</div> -->
                 </li>
 
                 <li class="grid_item" data-category="Writing Art Coding" id="gods_comic">
                     <div class="grid_image">
-                        <a href="./gods_web_comic/index.html" target="_blank" ><img src="media/fallback_media/gods_img.png" alt="painting"></a>
+                        <a href="./gods_web_comic/index.html" target="_blank" >
+                            <picture>
+                                <source srcset="media/gods_img.webp" type="image/webp">
+                                <source srcset="media/fallback_media/gods_img.png" type="image/png"> 
+                                <img src="media/fallback_media/gods_img.png" alt="painting">
+                            </picture>
+                        </a>
                     </div>
                     <div class="grid_text">"gods" <br><span style="font-size: 1.5rem">(2020, webcomic)</span></div>
                 </li>
 
                 <li class="grid_item" data-category="Writing Coding" id="collab_post">
                     <div class="grid_image">
-                        <a href="https://dev.to/gunderodd/8-things-i-learned-in-the-collab-lab-12dk" target="_blank"><img src="media/fallback_media/collab_post.png" alt="article screenshot"></a>
+                        <a href="https://dev.to/gunderodd/8-things-i-learned-in-the-collab-lab-12dk" target="_blank">
+                            <picture>
+                                <source srcset="media/collab_post.webp" type="image/webp">
+                                <source srcset="media/fallback_media/collab_post.png" type="image/png">
+                                <img src="media/fallback_media/collab_post.png" alt="article screenshot">
+                            </picture>
+                        </a>
                     </div>
                     <div class="grid_text">Coding Post: The Collab Lab</div>
                 </li>
 
-                <li class="grid_item" data-category="Animation Writing" id="item5">
+                <li class="grid_item" data-category="Writing" id="broken_id">
+                    <div class="grid_image">
+                        <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B00JZ5VFZU&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_TVItEbGG5MTFF" ></iframe>
+                    </div>
+                </li>
+
+                <!-- <li class="grid_item" data-category="Animation Writing" id="item5">
                     <div class="grid_image">
                         <img src="https://source.unsplash.com/1600x900/?essay" alt="essay">
                     </div>
@@ -159,11 +178,17 @@
                         <img src="https://source.unsplash.com/1600x900/?artist" alt="artist">
                     </div>
                     <div class="grid_text">I'm AN ART thing</div>
-                </li>
+                </li> -->
                 
                 <li class="grid_item" data-category="Writing Coding" id="comic_post">
                     <div class="grid_image">
-                        <a href="https://dev.to/gunderodd/little-victories-and-major-meltdowns-in-front-end-comic-design-3dn" target="_blank"><img src="media/fallback_media/comic_post.png" alt="Dev.to Post"></a>
+                        <a href="https://dev.to/gunderodd/little-victories-and-major-meltdowns-in-front-end-comic-design-3dn" target="_blank">
+                            <picture>
+                                <source srcset="media/comic_post.webp" type="image/webp">
+                                <source srcset="media/fallback_media/comic_post.png" type="image/png">
+                                <img src="media/fallback_media/comic_post.png" alt="Dev.to Post">
+                            </picture>
+                        </a>
                     </div>
                     <div class="grid_text">Coding Post: Webcomics</div>
                 </li> 
@@ -207,28 +232,92 @@
         <!-- social media links, visually connected to landscape drawing underneath -->
         <div id="links_holder">
             <div id="social_links_frame">
-                <a href="https://www.instagram.com/themanwhofellinbuffalo/" target="_blank"><img class="icon" src="media/icons_insta.webp"></a>
-                <a href="https://www.facebook.com/themanwhofellinbuffalo/" target="_blank"><img class="icon" src="media/icons_facebook.webp"></a>
-                <a href="https://twitter.com/ethan_bundy" target="_blank"><img class="icon" src="media/icons_twitter.webp"></a>
-                <a href="" target="_blank"><img class="icon" src="media/icons_email.webp"></a>
-                <a href="https://themanwhofellinbuffalo.bandcamp.com/" target="_blank"><img class="icon" src="media/icons_bandcamp.webp"></a>
-                <a href="https://soundcloud.com/themanwhofellinbuffalo" target="_blank"><img class="icon" src="media/icons_soundcloud.webp"></a>
-                <a href="https://artists.spotify.com/c/artist/0Cw3nYYZgDGw7DPNlFHIDM/music/songs" target="_blank"><img class="icon" src="media/icons_spotify.webp"></a>
-                <a href="https://www.youtube.com/channel/UCT5yawCrPztfK3u6xvS5-Pw?view_as=subscriber" target="_blank"><img class="icon" src="media/icons_youtube.webp"></a>
+                <a href="https://www.instagram.com/themanwhofellinbuffalo/" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_insta.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_insta.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_insta.png">
+                    </picture>
+                </a>
+                <a href="https://www.facebook.com/themanwhofellinbuffalo/" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_facebook.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_facebook.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_facebook.png">
+                    </picture>
+                </a>
+                <a href="https://twitter.com/ethan_bundy" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_twitter.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_twitter.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_twitter.png">
+                    </picture>
+                </a>
+                <a href="" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_email.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_email.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_email.png">
+                    </picture>
+                </a>
+                <a href="https://themanwhofellinbuffalo.bandcamp.com/" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_bandcamp.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_bandcamp.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_bandcamp.png">
+                    </picture>
+                </a>
+                <a href="https://soundcloud.com/themanwhofellinbuffalo" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_soundcloud.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_soundcloud.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_soundcloud.png">
+                    </picture>
+                </a>
+                <a href="https://artists.spotify.com/c/artist/0Cw3nYYZgDGw7DPNlFHIDM/music/songs" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_spotify.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_spotify.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_spotify.png">
+                    </picture>
+                </a>
+                <a href="https://www.youtube.com/channel/UCT5yawCrPztfK3u6xvS5-Pw?view_as=subscriber" target="_blank">
+                    <picture>
+                        <source srcset="media/icons_youtube.webp" type="image/webp">
+                        <source srcset="media/fallback_media/icons_youtube.png" type="image/png">
+                        <img class="icon" src="media/fallback_media/icons_youtube.png">
+                    </picture>
+                </a>
             </div>
-            <img src="media/side_bubble.webp" id="links_bubble">
+            <picture id="links_bubble">
+                <source srcset="media/side_bubble.webp" type="image/webp">
+                <source srcset="media/fallback_media/side_bubble.png" type="image/png">
+                <img src="media/fallback_media/side_bubble.png">
+            </picture>
         </div>
 
         <!-- landscape illustration with well that mascot falls into, more links -->
         <div id="landscape_menu">
-            <img src="media/landscape.webp" id="landscape">
+            <picture id="landscape">
+                <source srcset="media/landscape.webp" type="image/webp">
+                <source srcset="media/fallback_media/landscape.png" type="image/png">
+                <img src="media/fallback_media/landscape.png">
+            </picture>
             <div id="about_holder">
                 <a href="other_pages/about.html" target="_blank" id="about_text">about</a>
-                <img src="media/side_bubble.webp" id="about_image">
+                <picture  id="about_image">
+                    <source srcset="media/side_bubble.webp" type="image/webp">
+                    <source srcset="media/fallback_media/side_bubble.png" type="image/png">
+                    <img src="media/fallback_media/side_bubble.png" id="about_image">
+                </picture>
             </div>
             <div id="resume_holder">
                 <a href="other_pages/resume.html" target="_blank" id="resume_text">resume</a>
-                <img src="media/bottom_bubble.webp" id="resume_image">
+                <picture id="resume_image">
+                    <source srcset="media/bottom_bubble.webp" type="image/webp">
+                    <source srcset="media/fallback_media/bottom_bubble.png" type="image/png">
+                    <img src="media/fallback_media/bottom_bubble.png">
+                </picture>
             </div>
         </div>
 
@@ -237,7 +326,9 @@
         <!-- footer illustation, crowd at bottom of page -->    
         <div id="footer">
             <picture>
-                <img src="media/crowd_faces.webp" id="bottom_illustration_foreground">
+                <source srcset="media/crowd_faces.webp" type="image/webp">
+                <source srcset="media/fallback_media/crowd_faces.png" type="image/png">
+                <img src="media/fallback_media/crowd_faces.png" id="bottom_illustration_foreground">
             </picture>
         </div>
 
@@ -246,12 +337,8 @@
         <!-- make the plane fly with scroll -->
         <script src="js/lil_plane.js"></script>
         <script src="js/big_plane.js"></script>
-        <!--  -->
+        <!-- make the speech bubbles at the top fo the page disappear on scroll -->
         <script src="js/speech_bubbles.js"></script>
-        <script src="js/smooth-scroll.js"></script>
-        <script>
-            let scroll = new SmoothScroll('a[href*="#"]')
-        </script>
         <!-- use best image type for css background images -->
         <script src="js/modernizr-custom.js"></script>
 
