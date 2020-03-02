@@ -448,6 +448,14 @@ input[type="radio"] {
 
 }
 
+    /* patch the filter layout for edge browser */
+    @supports (-ms-accelerator: true) {
+    
+        .filters {
+        justify-content: space-around;
+        }
+    }
+
 label {
     padding: 10%;
 
