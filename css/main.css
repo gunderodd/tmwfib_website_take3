@@ -438,7 +438,7 @@ input[type="radio"] {
 .filters {
     /* border: 1px solid green; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 2rem;
     margin-bottom: 5%;
     flex-wrap: wrap;
@@ -449,10 +449,10 @@ input[type="radio"] {
 }
 
     /* patch the filter layout for edge browser */
-    @supports (-ms-accelerator: true) {
+    @supports not (-ms-ime-align: auto) {
     
         .filters {
-        justify-content: space-around;
+        justify-content: space-evenly;
         }
     }
 
