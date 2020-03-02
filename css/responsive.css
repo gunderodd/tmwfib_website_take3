@@ -67,7 +67,7 @@
         }
     
         #title_bubble_text {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
 
     #scroll_bubble {
@@ -83,8 +83,8 @@
         }
     
         #scroll_bubble_text {
-            font-size: 3rem;
-            line-height: 3rem;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
             font-weight: 600;
             /* top: 10%; */
             left: 10%;
