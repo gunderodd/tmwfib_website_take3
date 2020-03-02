@@ -653,35 +653,47 @@ grid item recipe:
     }
 
 #broken_id {
-    grid-column: span 3;
+    grid-column: span 2;
     grid-row: span 3;
 }
 
+    #broken_id .grid_text {
+        font-size: 2.5rem;
+    }
 
-#item5 {
-    /* height: 40vh; */
-    background-color: lightskyblue;
-}
-
-#item6 {
-    /* height: 80vh; */
-    background-color: lightgray;
-}
-
-#item7 {
-    /* height: 40vh; */
-    background-color: lightslategray;
-}
-
-#item8 {
-    /* height: 50vh; */
-    background-color: lightsalmon;
-}
-
-#item9 {
-    grid-column: span 5;
+#album_saidinever {
+    grid-column: span 2;
     grid-row: span 3;
+
 }
+
+    #saidinever_iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+#album_probablybroke {
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+    #probablybroke_iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 
 #comic_post {
     font-size: 1.2rem;
@@ -696,3 +708,25 @@ grid item recipe:
     #comic_post:hover .grid_text {
         background: rgba(0, 0,0,.9);
     }
+
+#album_nearlycaught {
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+    #nearlycaught_iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+#collab_video {
+    grid-column: span 3;
+    grid-row: span 2;
+}
