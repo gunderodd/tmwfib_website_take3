@@ -92,7 +92,7 @@
             </ol>
 
             <!-- the actual grid with the items that sort by the selected filter -->
-            <ol class="portfolio_grid">
+            <ul class="portfolio_grid">
 
                 <li class="grid_item" data-category="Music Animation" id="tear_your_heart">
                     <div class="grid_video">
@@ -216,7 +216,7 @@
                     <div class="grid_text">Sketchbook Gallery #1</div>
                 </li>
 
-            </ol>
+            </ul>
 
 
             <!-- this is the central fixed figure of the buffalo character -->
@@ -355,6 +355,14 @@
         <script src="js/speech_bubbles.js"></script>
         <!-- use best image type for css background images -->
         <script src="js/modernizr-custom.js"></script>
+
+        <!-- randomize order of items in portfolio grid -->
+        <script>
+            var ul = document.querySelector('ul');
+                for (var i = ul.children.length; i >= 0; i--) {
+                    ul.appendChild(ul.children[Math.random() * i | 0]);
+                }
+        </script>
 
     </body>
 </html>
