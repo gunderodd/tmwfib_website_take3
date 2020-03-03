@@ -730,3 +730,28 @@ grid item recipe:
     grid-column: span 3;
     grid-row: span 2;
 }
+
+#sorry_jon {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#machiavellian {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#baseball_song {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#collab_lab_call {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#sketchbook1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
