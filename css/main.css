@@ -530,6 +530,9 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
     grid-gap: .2rem;
     grid-auto-flow: dense;
 
+    padding: 5vh;
+    border: 1px solid white;
+
 }
 
 .grid_item {
