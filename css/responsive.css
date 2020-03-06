@@ -16,6 +16,10 @@
         grid-row: span 5 !important;
     }
 
+    #filters_label {
+        font-size: 3rem;
+    }
+
     .filters {
         font-size: 4rem;
         font-weight: 600;

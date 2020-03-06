@@ -8,7 +8,8 @@
 #header_illustration {
     width: 100%;
     height: 100%;
-    transform: scaleY(-1) scaleX(-1);    
+    transform: scaleY(-1) scaleX(-1); 
+    -webkit-backface-visibility: visible; /* Safari */   
 }
 
 #footer {
@@ -161,51 +162,23 @@
         50% { background-image: url("../media/clouds_3b.webp"); }
     }
 
-#side-bird {
-    width: 200px;
-    height: 150px;
-    background-size: contain;
-    background-repeat: no-repeat;
 
-    position: relative;
-    z-index: 7;
-    margin-bottom: 100vh;
 
-    animation: flap .5s ease-in-out infinite, hoverpatrol 10s infinite;
-}
 
-    .no-webp #side-bird {
-        background-image: url("../media/fallback_media/bird_side_1.png");
-    }
 
-    .webp #side-bird {
-        background-image: url("../media/bird_side_1.webp");
-    }
-
-    @keyframes hoverpatrol {
-        0% { left: 0; transform: scaleX(1); }
-        20% { left: 30%; transform: scaleX(1); }
-        50% { left: 70%; transform: scaleX(-1); }
-        70% { left: 30%; transform: scaleX(-1); }
-        0% { left: 0; transform: scaleX(1); }
-    }
-
-    @keyframes flap {
-        0% { background-image: url("../media/bird_side_1.webp"); }
-        50% { background-image: url("../media/bird_side_3.webp");}
-        75% { background-image: url("../media/bird_side_4.webp");}
-        90% { background-image: url("../media/bird_side_2.webp"); }
-    }
-
-#front-bird-holder {
+#front_bird_holder {
     margin: 0 auto;
     position: relative;
     width: 100%;
     height: 40vh;
-    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
-#front-bird {
+#front_bird1 {
     width: 30%;
     height: 100%;
     background-size: contain;
@@ -218,11 +191,11 @@
 
 }
 
-    .no-webp #front-bird {
+    .no-webp #front_bird1 {
         background-image: url("../media/fallback_media/bird_front_1.png");
     }
 
-    .webp #front-bird {
+    .webp #front_bird1 {
         background-image: url("../media/bird_front_1.webp");
     }
 
@@ -231,6 +204,86 @@
         25% { background-image: url("../media/bird_front_3.webp"); }
         50% { background-image: url("../media/bird_front_2.webp"); }
         80% { background-image: url("../media/bird_front_4.webp"); }
+    }
+
+#front_bird2 {
+    width: 30%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: relative;
+    z-index: 7;
+
+    animation: front-flap .9s infinite;
+
+}
+
+    .no-webp #front_bird2 {
+        background-image: url("../media/fallback_media/bird_front_1.png");
+    }
+
+    .webp #front_bird2 {
+        background-image: url("../media/bird_front_1.webp");
+    }
+
+
+
+
+#side_bird_holder {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#side_bird1 {
+    width: 20%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: flap .5s ease-in-out infinite;
+}
+
+    .no-webp #side_bird1 {
+        background-image: url("../media/fallback_media/bird_side_1.png");
+    }
+
+    .webp #side_bird1 {
+        background-image: url("../media/bird_side_1.webp");
+    }
+
+    @keyframes flap {
+        0% { background-image: url("../media/bird_side_1.webp"); }
+        50% { background-image: url("../media/bird_side_3.webp");}
+        75% { background-image: url("../media/bird_side_4.webp");}
+        90% { background-image: url("../media/bird_side_2.webp"); }
+    }
+
+#side_bird2 {
+    width: 20%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+
+    animation: flap2 .7s ease-in-out infinite;
+}
+
+    .no-webp #side_bird2 {
+        background-image: url("../media/fallback_media/bird_side_1.png");
+    }
+
+    .webp #side_bird2 {
+        background-image: url("../media/bird_side_1.webp");
+    }
+
+    @keyframes flap2 {
+        30% { background-image: url("../media/bird_side_1.webp"); }
+        40% { background-image: url("../media/bird_side_3.webp");}
+        86% { background-image: url("../media/bird_side_4.webp");}
+        99% { background-image: url("../media/bird_side_2.webp"); }
     }
 
 #plane-holder-lil {

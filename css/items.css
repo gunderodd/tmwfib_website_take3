@@ -1,0 +1,159 @@
+
+/* 
+grid item recipe:
+1. can leave the size and placement as default, or asign it something using grid-column and grid-row
+2. name them with unique, descriptive ids
+3. check responsiveness behavior as well, if it needs a tweak go to responsiveness.css
+ */
+
+ #tear_your_heart {
+    grid-column: span 4;
+    grid-row: span 3;
+}
+
+#album_stilltalkedabout {
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+    #still_talked_iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+#gods_comic {
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+
+    #gods_comic .grid_text {
+        font-size: 3rem;
+
+    }
+
+#collab_post {
+    font-size: 1.2rem;
+    grid-column: span ;
+    grid-row: span 2;
+}
+
+    #collab_post:hover .grid_text {
+        background: rgba(0, 0,0,.9);
+    }
+
+#broken_id {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+    #broken_id .grid_text {
+        font-size: 2.5rem;
+    }
+
+#album_saidinever {
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+    #saidinever_iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+#album_probablybroke {
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+    #probablybroke_iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+#comic_post {
+    font-size: 1.2rem;
+    grid-column: span ;
+    grid-row: span 2;
+}
+
+    #comic_post .grid_image img {
+        object-position: left;
+    }
+
+    #comic_post:hover .grid_text {
+        background: rgba(0, 0,0,.9);
+    }
+
+#album_nearlycaught {
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+
+    #nearlycaught_iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+#collab_video {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#sorry_jon {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#machiavellian {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#baseball_song {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#collab_lab_call {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+#sketchbook1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#college_claymation {
+    grid-column: span 3;
+    grid-row: span 2;
+}

@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/illustrations.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/items.css">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
@@ -44,8 +45,9 @@
             <div class="slider" id="cloud3"></div>
         </div>
 
-        <div id="front-bird-holder">
-            <div class="" id="front-bird"></div>
+        <div id="front_bird_holder">
+            <div class="" id="front_bird1"></div>
+            <div class="" id="front_bird2"></div>
         </div>
 
         <div id="plane-holder-lil">
@@ -59,7 +61,10 @@
         <!-- this is the general wrapper around the grid, the mascot, and all the elements that he falls past -->
         <div class="wrapper">
 
-            <!-- <div class="" id="side-bird"></div> -->
+            <div id="side_bird_holder">
+                <div class="" id="side_bird1"></div>
+                <div class="" id="side_bird2"></div>
+            </div>
             
             <!-- these are the buttons, off screen, but the labels will be visible and styled -->
             <input type="radio" id="All" name="categories" value="All" checked>
@@ -70,6 +75,8 @@
             <input type="radio" id="Coding" name="categories" value="Coding">
 
             <!-- here are the visual labels to filter the grid -->
+            <h3 id="filters_label">Filters (Pick an Interest)</h3>
+            
             <ol class="filters">
                 <li>
                   <label for="All">All</label>
@@ -214,6 +221,12 @@
                         </a>
                     </div>
                     <div class="grid_text">Sketchbook Gallery #1</div>
+                </li>
+
+                <li class="grid_item" data-category="Animation" id="college_claymation">
+                    <div class="grid_video">
+                        <iframe src="https://www.youtube.com/embed/wx-IJpOdCX4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </li>
 
             </ul>
