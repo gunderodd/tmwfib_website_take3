@@ -8,6 +8,7 @@
     .portfolio_grid {
         grid-template-columns: 1fr !important;
         grid-auto-rows: 10vh !important;
+        padding: 1vw;
     }
 
     .grid_item {
