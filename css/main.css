@@ -119,14 +119,12 @@ ul {
 /* at the top */
 
 #title_bubble {
-    /* border: 1px solid red; */
     position: relative;
     width: 40vw;
     height: 60vh;
     top: -97%;
     left: 2%;
     z-index: 7;
-    opacity: .9;
     transform: rotate(-4deg);
 }
 
@@ -135,6 +133,7 @@ ul {
         height: 60vh;
         transform: scaleX(-1);
         filter: drop-shadow(1px 1px 5px black);
+        opacity: .9;
     }
 
     #title_bubble_text {
@@ -157,7 +156,6 @@ ul {
     top: -155%;
     right: -65%;
     z-index: 7;
-    opacity: .9;
     transform: rotate(15deg);
 }
 
@@ -165,6 +163,8 @@ ul {
         width: 25vw;
         height: 60vh;
         filter: drop-shadow(0 0 5px black);
+        opacity: .9;
+
     }
 
     #scroll_bubble_text {
@@ -382,7 +382,6 @@ ul {
     position: relative;
     width: 100%;
     height: 100%;
-    /* border: 1px solid red; */
 
     z-index: 10;
 
@@ -391,7 +390,7 @@ ul {
 }
 
     #resume_image {
-        position: relative;
+        position: absolute;
 
         filter: drop-shadow(1px 1px 2px black);
         z-index: 9;
@@ -404,11 +403,10 @@ ul {
         }
 
     #resume_text {
-        /* border: 1px solid blue; */
         width: 100%;
         height: 70%;
         position: absolute;
-        top: 10%;
+        top: 20%;
         left: 15%;
         font-size: 1.2rem;
         font-weight: 600;

@@ -91,7 +91,7 @@
             font-size: 2.5rem;
             line-height: 2.5rem;
             font-weight: 600;
-            /* top: 10%; */
+            top: 5%;
             left: 10%;
             width: 85%;
             height: 65%;
@@ -100,6 +100,18 @@
     .cloud_cluster {
         margin-top: 100vh;
     }
+
+    #side_bird_holder {
+        height: 20vh;
+    }
+
+        #side_bird1 {
+            width: 30%;
+        }
+
+        #side_bird2 {
+            width: 30%;
+        }
 
                                                 /* social media links */
 
