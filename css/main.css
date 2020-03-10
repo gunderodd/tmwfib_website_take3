@@ -564,7 +564,14 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
     transform: scale(1.1);
 }
 
+/* changed this to try to make it work on safari, still looks fine on chrome, might stop
+grid items from being half sized */
 .grid_item .grid_video {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 0;
+    min-height: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;

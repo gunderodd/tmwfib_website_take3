@@ -7,7 +7,7 @@
 @media screen and (max-width: 500px) {
     .portfolio_grid {
         grid-template-columns: 1fr !important;
-        grid-auto-rows: 10vh !important;
+        grid-auto-rows: 6vh !important;
         padding: 1vw;
     }
 
