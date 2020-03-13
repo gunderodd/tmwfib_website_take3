@@ -157,3 +157,17 @@ grid item recipe:
     grid-column: span 3;
     grid-row: span 2;
 }
+
+#mini1_post {
+    font-size: 1.2rem;
+    grid-column: span ;
+    grid-row: span 2;
+}
+
+    #mini1_post .grid_image img {
+        object-position: left;
+    }
+
+    #mini1_post:hover .grid_text {
+        background: rgba(0, 0,0,.9);
+    }

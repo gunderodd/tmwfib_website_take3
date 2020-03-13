@@ -2,8 +2,6 @@
                                     portfolio grid and contents
                                     ============================= */
 
-/* add this to the responsive css sheet later */
-
 @media screen and (max-width: 500px) {
     .portfolio_grid {
         grid-template-columns: 1fr !important;
