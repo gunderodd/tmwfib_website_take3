@@ -171,3 +171,23 @@ grid item recipe:
     #mini1_post:hover .grid_text {
         background: rgba(0, 0,0,.9);
     }
+
+#mini2_post {
+    font-size: 1.2rem;
+    grid-column: span ;
+    grid-row: span 2;
+}
+
+    #mini2_post .grid_image img {
+        object-position: left;
+    }
+
+    #mini2_post:hover .grid_text {
+        background: rgba(0, 0,0,.9);
+    }
+
+#corn_experience_design {
+    font-size: 1rem;
+    grid-column: span 2;
+    grid-row: span 2;
+}
