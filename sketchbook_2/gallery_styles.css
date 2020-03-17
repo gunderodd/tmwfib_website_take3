@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    margin-bottom: 1vh;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    font-family: 'Amatic SC', cursive;
+    background-color: #fcf7e8;
+
+    /* font plan: use a responsive base unit, here, and use rem everywhere else */
+    font-size: 3vw;
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 50vh;
+    margin: 3vw;
+    grid-gap: 1vw;
+    align-items: start;
+}
+
+.gallery img {
+    height: auto;
+    width: 100%;
+    margin: 1vh;
+}
+
+.gallery img:hover {
+    transition: .3s;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px black;
+}
+
+@media screen and (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-gap: 2%;
+    }
+
+}
