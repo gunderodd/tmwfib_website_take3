@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <!-- stylesheet for lite-youtube embeds -->
+        <link rel="stylesheet" href="node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
     </head>
     <body>
 
@@ -102,11 +104,22 @@
             <!-- the actual grid with the items that sort by the selected filter -->
             <ul class="portfolio_grid">
 
-                <li class="grid_item" data-category="Music Animation" id="tear_your_heart">
+                <!-- <li class="grid_item" data-category="Music Animation" id="tear_your_heart">
                     <div class="grid_video">
                         <iframe src="https://www.youtube.com/embed/vBA8jAXqwvM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                </li> -->
+                <li class="grid_item" data-category="Music Animation" id="tear_your_heart">
+                    <div class="grid_video">
+                        <lite-youtube videoid="vBA8jAXqwvM"></lite-youtube>
+                    </div>
+
+                    <!-- frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen -->
                 </li>
+
+                <!-- this is the new version using lite-youtube for Tear Your Heart Apart -->
+
 
                 <li class="grid_item" data-category="Music" id="album_stilltalkedabout">
                     <div class="grid_image">
@@ -147,18 +160,18 @@
                     </div>
                 </li>
 
-                <li class="grid_item" data-category="Music" id="album_saidinever">
+                <!-- <li class="grid_item" data-category="Music" id="album_saidinever">
                     <div class="grid_image">
                         <iframe id="saidinever_iframe" style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=2945394430/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://themanwhofellinbuffalo.bandcamp.com/album/said-i-never-said-that">said, &quot;i never said that!&quot; by the man who fell in buffalo</a></iframe>
                     </div>
-                </li>
+                </li> -->
 
                 
-                <li class="grid_item" data-category="Music" id="album_probablybroke">
+                <!-- <li class="grid_item" data-category="Music" id="album_probablybroke">
                     <div class="grid_image">
                         <iframe id="probablybroke_iframe" style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=3068574217/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://themanwhofellinbuffalo.bandcamp.com/album/probably-broke-his-hip">probably broke his hip by the man who fell in buffalo</a></iframe>
                     </div>
-                </li>
+                </li> -->
                 
                 <li class="grid_item" data-category="Writing Coding" id="comic_post">
                     <div class="grid_image">
@@ -173,43 +186,43 @@
                     <div class="grid_text">Coding Post: Webcomics</div>
                 </li> 
 
-                <li class="grid_item" data-category="Music" id="album_nearlycaught">
+                <!-- <li class="grid_item" data-category="Music" id="album_nearlycaught">
                     <div class="grid_image">
                         <iframe id="nearlycaught_iframe" style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=2196331708/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="http://themanwhofellinbuffalo.bandcamp.com/album/nearly-caught-the-railing">nearly caught the railing by the man who fell in buffalo</a></iframe>
                     </div>
-                </li>
+                </li> -->
 
-                <li class="grid_item" data-category="Coding" id="collab_video">
+                <!-- <li class="grid_item" data-category="Coding" id="collab_video">
                     <div class="grid_video">
                         <iframe src="https://www.youtube.com/embed/nw2nKutXBsQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
-                </li>
+                </li> -->
 
 
-                <li class="grid_item" data-category="Animation" id="sorry_jon">
+                <!-- <li class="grid_item" data-category="Animation" id="sorry_jon">
                     <div class="grid_video">
                         <iframe src="https://www.youtube.com/embed/zGWY2QKo_84?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </li>
+                </li> -->
 
                 
-                <li class="grid_item" data-category="Animation" id="machiavellian">
+                <!-- <li class="grid_item" data-category="Animation" id="machiavellian">
                     <div class="grid_video">
                         <iframe src="https://www.youtube.com/embed/JVZDZ61zvDo?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </li>
+                </li> -->
 
 
-                <li class="grid_item" data-category="Music" id="baseball_song">
+                <!-- <li class="grid_item" data-category="Music" id="baseball_song">
                     <div class="grid_video">
                         <iframe src="https://www.youtube.com/embed/8pYKyG6mgHk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </li>
+                </li> -->
 
-                <li class="grid_item" data-category="Coding" id="collab_lab_call">
+                <!-- <li class="grid_item" data-category="Coding" id="collab_lab_call">
                     <div class="grid_video">
                         <iframe src="https://www.youtube.com/embed/JYwo6Z_SuLc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </li>
+                </li> -->
 
                 <li class="grid_item" data-category="Art" id="sketchbook1">
                     <div class="grid_image">
@@ -237,11 +250,11 @@
                     <div class="grid_text">Sketchbook Gallery #2</div>
                 </li>
 
-                <li class="grid_item" data-category="Animation" id="college_claymation">
+                <!-- <li class="grid_item" data-category="Animation" id="college_claymation">
                     <div class="grid_video">
                         <iframe src="https://www.youtube.com/embed/wx-IJpOdCX4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </li>
+                </li> -->
 
                 <li class="grid_item" data-category="Writing Coding" id="mini1_post">
                     <div class="grid_image">
@@ -452,15 +465,17 @@
         <!-- make the speech bubbles at the top fo the page disappear on scroll -->
         <script src="js/speech_bubbles.js"></script>
         <!-- use best image type for css background images -->
-        <script src="js/modernizr-custom.js"></script>
+        <script src="js/modernizr-custom.js"></script> -->
+        <!-- lite-youtube embeds -->
+        <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
 
         <!-- randomize order of items in portfolio grid -->
-        <script>
+        <!-- <script>
             var ul = document.querySelector('ul');
                 for (var i = ul.children.length; i >= 0; i--) {
                     ul.appendChild(ul.children[Math.random() * i | 0]);
                 }
-        </script>
+        </script> -->
 
     </body>
 </html>

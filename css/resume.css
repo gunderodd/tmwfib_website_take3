@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #fcf7e8;
+    background-color: #fffdfa;
 
 }
 
@@ -41,12 +41,13 @@ a {
 .column {
     margin: 5%;
     padding: 5%;
+    /* border: 1px solid orange; */
 }
 
 #column_1 {
     border-right: 1px solid black;
     grid-column: 1 / 3;
-    text-align: right;
+    /* text-align: right; */
 }
 
 #column_2 {
@@ -54,6 +55,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-self: center;
+    flex-wrap: wrap;
 }
 
 #column_2 img {
