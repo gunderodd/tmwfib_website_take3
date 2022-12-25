@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/thempsxf/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    
