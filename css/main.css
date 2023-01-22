@@ -11,12 +11,17 @@
 }
 
 html, body {
-
-    height: 100%;
+    /* dunno if i need this, took it away for solid background instead of repeat */
+    /* height: 100%; */
     /* max-width: 100%; */
     /* overflow-x: hidden; */
     font-family: 'Amatic SC', cursive;
-    background-color: #fcf7e8;
+    /* background-color: #fcf7e8; */
+
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,.5) 6%, rgba(251,250,244,.3) 66%, rgba(236,233,213,.7) 100%),
+    linear-gradient(270deg, rgba(255,255,255,.2) 9%, rgba(236,233,213,.6) 50%, rgba(255,255,255,.2) 93%);
+
     /* overflow: auto; */
     /* background-image: url("css_media/crowd_faces_top.png");
     background-size: contain;
@@ -529,7 +534,7 @@ https://www.youtube.com/watch?time_continue=48&v=gvPyJ0rc944&feature=emb_title
     grid-auto-flow: dense;
 
     padding: 5vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
 }
 
