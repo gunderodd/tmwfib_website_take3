@@ -12,7 +12,8 @@
 
 html, body {
     /* dunno if i need this, took it away for solid background instead of repeat */
-    /* height: 100%; */
+    /* i DO need it. check the very top o fthe page. or at lesat if i'm going to not use it then i have to have something else to keep the speech bubbles up there... */
+    height: 100%;
     /* max-width: 100%; */
     /* overflow-x: hidden; */
     font-family: 'Amatic SC', cursive;
